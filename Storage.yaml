@@ -5,7 +5,7 @@ pool:
 steps:
 - task: AzurePowerShell@3
   inputs:
-    azureSubscription: 'Azure subscription 1'
+    azureSubscription: 'AzureSubscriptionPipeline'
     ScriptPath: 'AzureResourceGroupDemo/Deploy-AzureResourceGroup.ps1'
     ScriptArguments: -ResourceGroupName 'demogroup' -ResourceGroupLocation 'eastus'
     azurePowerShellVersion: LatestVersion
